@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Krati Madhwani</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact Me</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="profile-container">
+      <img src="./images/krati-pic.jpg" alt="Profile Image" class="profile-image">
+    </div>
+    <h2>Welcome to My Portfolio</h2>
+    <p class="intro-text">I'm a passionate web developer who loves creating beautiful and responsive websites. With a keen eye for design and a strong technical background, I bring ideas to life through clean, efficient code.</p>
+  </section>
+
+  <section id="about">
+    <div class="about-image-container">
+      <div class="hexagon-frame">
+        <img src="./images/krati-pic.jpg" alt="Profile Image" class="about-image">
+      </div>
+    </div>
+    <div class="about-content">
+      <h2>About <span>Me</span></h2>
+      <h3>Frontend Developer!</h3>
+      <p>I am a passionate frontend developer with expertise in creating beautiful and responsive web applications. With a strong foundation in HTML, CSS, JavaScript and React, I specialize in building modern user interfaces that provide exceptional user experiences. My approach combines clean code practices with creative design solutions to deliver high-quality web applications that meet both user needs and business objectives.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>My <span>Services</span></h2>
+    <div class="services">
+      <div class="service-card">
+        <i class="fas fa-chart-line service-icon"></i>
+        <h3>Responsive Web Design</h3>
+        <p>Implementing designs which ensure a seamless user experience across all devices.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-code service-icon"></i>
+        <h3>Frontend Development</h3>
+        <p>Building interactive and dynamic web applications using HTML, CSS, JavaScript and React.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-pencil service-icon"></i>
+        <h3>Content Writing</h3>
+        <p>Creating clear and engaging content for websites and social media platforms.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My <span>Projects</span></h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="./images/portf.avif" alt="Web Design Project" class="project-image">
+        <div class="project-overlay">
+          <h3 class="project-title">Portfolio</h3>
+          <p class="project-description">Built a simple portfolio website to showcase my work and skills.</p>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="./images/dice-roll.jpg" alt="Development Project" class="project-image">
+        <div class="project-overlay">
+          <h3 class="project-title">Rollzy Game</h3>
+          <p class="project-description">Developed a simple dice roll game with a target, for two players using HTML, CSS and JavaScript.</p>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <img src="./images/fet.png" alt="Mobile App Project" class="project-image">
+        <div class="project-overlay">
+          <h3 class="project-title">Finance Expense Tracker</h3>
+          <p class="project-description">Coded a responsive website for tracking daily expenses in a group of 9 people where my role was to do the frontend part.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact <span>Me!</span></h2>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <input type="text" class="form-control" id="fullName" placeholder="Full Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="phone" placeholder="Mobile Number">
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="subject" placeholder="Email Subject" required>
+      </div>
+      <div class="form-group full-width">
+        <textarea class="form-control" id="message" placeholder="Your Message" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send Message</button>
+      <div class="form-status"></div>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 My Portfolio. All rights reserved.
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
